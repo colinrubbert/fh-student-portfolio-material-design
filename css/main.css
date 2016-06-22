@@ -134,6 +134,10 @@ em, .text-italic {
   transition: 0.3s ease-in-out;
 }
 
+#about-slider.toggle {
+  transform: translateY(0%);
+}
+
 .about-section-header {
   display: flex;
   flex-direction: row;
