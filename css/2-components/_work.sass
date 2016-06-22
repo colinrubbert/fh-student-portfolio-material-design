@@ -8,3 +8,65 @@
   display: flex
   flex-direction: column
   justify-content: center
+
+
+#work-slider
+  position: fixed
+  top: 10%
+  left: 0
+  width: 80%
+  height: auto
+  display: flex
+  flex-direction: column
+  background-color: #fff
+  border-radius: 2px;
+  // transform: translateX(-100%)
+  transition: 0.3s ease-in-out
+
+.work-section-header
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  padding: 50px
+  background-color: $work-primary-color
+  color: $text
+  .work-section-title
+    font-size: 36px
+    line-height: 36px
+  .work-section-close
+    display: flex
+    justify-content: center
+    height: 48px
+    width: 48px
+    border-radius: 50%
+    background-color: $work-accent-color
+    box-shadow: 0 6px 13px 0 rgba(0,0,0,.23)
+    cursor: pointer
+
+.work-section-card-container
+  padding: 20px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  .work-card-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 30%
+    .work-card-hero
+      display: flex
+      img
+        height: 200px
+        width: 100%
+        object-fit: cover
+    .work-card-content-wrapper
+      padding: 20px
+      .work-card-title
+        padding: 10px 0
+      .work-card-description
+        padding: 10px 0
+      p
+        padding: 10px 0
+
+    .work-card-button-wrapper
+      padding: 20px

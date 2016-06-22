@@ -129,13 +129,13 @@ em, .text-italic {
   flex-direction: column;
   background-color: #fff;
   border-radius: 2px;
-  box-shadow: -5px 0px 20px 0 rgba(50, 50, 50, 0.2), 0px 7px 10px 0 rgba(50, 50, 50, 0.2), 7px 0 20px -1px rgba(50, 50, 50, 0.2);
   transform: translateY(-100%);
   transition: 0.3s ease-in-out;
 }
 
 #about-slider.toggle {
   transform: translateY(0%);
+  box-shadow: -5px 0px 20px 0 rgba(50, 50, 50, 0.2), 0px 7px 10px 0 rgba(50, 50, 50, 0.2), 7px 0 20px -1px rgba(50, 50, 50, 0.2);
 }
 
 .about-section-header {
@@ -204,6 +204,88 @@ em, .text-italic {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#work-slider {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+.work-section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.work-section-header .work-section-title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.work-section-header .work-section-close {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: #536dfe;
+  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+
+.work-section-card-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.work-section-card-container .work-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.work-section-card-container .work-card-wrapper .work-card-hero {
+  display: flex;
+}
+
+.work-section-card-container .work-card-wrapper .work-card-hero img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.work-section-card-container .work-card-wrapper .work-card-content-wrapper {
+  padding: 20px;
+}
+
+.work-section-card-container .work-card-wrapper .work-card-content-wrapper .work-card-title {
+  padding: 10px 0;
+}
+
+.work-section-card-container .work-card-wrapper .work-card-content-wrapper .work-card-description {
+  padding: 10px 0;
+}
+
+.work-section-card-container .work-card-wrapper .work-card-content-wrapper p {
+  padding: 10px 0;
+}
+
+.work-section-card-container .work-card-wrapper .work-card-button-wrapper {
+  padding: 20px;
 }
 
 #testimonial {
