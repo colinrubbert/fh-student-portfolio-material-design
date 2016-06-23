@@ -11,17 +11,24 @@
 
 
 #work-slider
-  position: fixed
-  top: 10%
-  left: 0
+  position: absolute
+  top: 0
+  left: 10%
   width: 80%
   height: auto
   display: flex
   flex-direction: column
   background-color: #fff
   border-radius: 2px;
-  // transform: translateX(-100%)
+  transform: translateY(-100%)
   transition: 0.3s ease-in-out
+
+#work-slider.toggle
+  transform: translateY(0%)
+  box-shadow: -5px 0px 20px 0 rgba(50, 50, 50, 0.2), 0px 7px 10px 0 rgba(50, 50, 50, 0.2), 7px 0 20px -1px rgba(50, 50, 50, 0.2)
+
+.work-section-card-container
+  margin: 50px
 
 .work-section-header
   display: flex
@@ -47,15 +54,20 @@
   padding: 20px
   display: flex
   flex-direction: row
+  flex-wrap: wrap
   justify-content: space-between
   .work-card-wrapper
     display: flex
     flex-direction: column
     justify-content: center
     width: 30%
+    margin: 10px 0
+    border-radius: 3px
+    box-shadow: -2px 0px 5px 1px rgba(50, 50, 50, 0.2), 0px 0px 5px 0px rgba(50, 50, 50, 0.2), 2px 0 5px 1px rgba(50, 50, 50, 0.2)
     .work-card-hero
       display: flex
       img
+        border-radius: 3px 3px 0 0
         height: 200px
         width: 100%
         object-fit: cover
@@ -65,8 +77,16 @@
         padding: 10px 0
       .work-card-description
         padding: 10px 0
+
+    .work-card-content-body
       p
         padding: 10px 0
 
     .work-card-button-wrapper
       padding: 20px
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      a
+        color: $text
+        text-decoration: none
